@@ -16,28 +16,73 @@
     width: 120px;
     display: inline-block;
 }
-.carousel-item{
+
+.brandSlider .carousel-item {
     height: 450px;
 }
-.carousel-item img {
+
+.brandSlider .carousel-item img {
     height: 100%;
     object-fit: cover;
 }
-.carousel-item{
+
+.brandSlider .carousel-item {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
-.carousel-item:nth-child(1){
+
+.brandSlider .carousel-item:nth-child(1) {
     background-image: url(https://iamrk-js.github.io/bootstrap4/assets/images/image1.jpg);
 }
-.carousel-item:nth-child(2){
+
+.brandSlider .carousel-item:nth-child(2) {
     background-image: url(https://iamrk-js.github.io/bootstrap4/assets/images/image2.jpg);
 }
-.carousel-item:nth-child(3){
+
+.brandSlider .carousel-item:nth-child(3) {
     background-image: url(https://iamrk-js.github.io/bootstrap4/assets/images/image3.jpg);
 }
 
-/* .navbar-brand img{
+
+.brandSlider .carousel-caption {
+    bottom: auto;
+    top: 20%;
+}
+
+
+
+/* homeHeading css  */
+
+.homeHeading, .video {
+    background-image: url('https://iamrk-js.github.io/bootstrap4/assets/images/lights.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+}
+.homeHeading::before, .video::before {
+    content: '';
+    position: absolute;
+    background: rgba(0,0,0,.7);
+    height: 100%;
     width: 100%;
-} */
+    top: 0;
+    left: 0;
+}
+.homeHeading .row{
+    z-index: 10;
+}
+
+
+/* video css  */
+
+.video{
+   background-image: url('https://iamrk-js.github.io/bootstrap4/assets/images/media.jpg');
+}
+
+
+.footer{
+   background-color: #000;
+   font-size: 18px;
+}
