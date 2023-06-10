@@ -1,0 +1,20 @@
+.testimonialSlider .owl-prev,
+.testimonialSlider .owl-next {
+    position: absolute;
+
+    top: 0%;
+    bottom: auto;
+}
+
+.testimonialSlider .owl-prev {
+    left: -30px;
+}
+
+.testimonialSlider .owl-next {
+    right: -30px;
+}
+
+.testimonialSlider .owl-prev>i,
+.testimonialSlider .owl-next>i {
+    font-size: 48px;
+}

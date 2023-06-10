@@ -5,7 +5,14 @@
 }
 
 
+
 /* css for navbar  */
+.appHeader .navbar-nav .active>.nav-link,
+.appHeader .navbar-nav .nav-link.active,
+.appHeader .navbar-nav .nav-link.show,
+.appHeader .navbar-nav .show>.nav-link {
+    color: orange !important;
+}
 
 .appHeader .navbar-dark .navbar-nav .nav-link {
     color: #fff;
@@ -54,35 +61,63 @@
 
 /* homeHeading css  */
 
-.homeHeading, .video {
+.homeHeading,
+.video {
     background-image: url('https://iamrk-js.github.io/bootstrap4/assets/images/lights.jpg');
     background-repeat: no-repeat;
-    background-position: center;
+    /* background-position: center; */
     background-attachment: fixed;
     position: relative;
 }
-.homeHeading::before, .video::before {
+
+.homeHeading::before,
+.video::before {
     content: '';
     position: absolute;
-    background: rgba(0,0,0,.7);
+    background: rgba(0, 0, 0, .7);
     height: 100%;
     width: 100%;
     top: 0;
     left: 0;
 }
-.homeHeading .row{
+
+.homeHeading .row {
     z-index: 10;
 }
-  
+
 
 /* video css  */
 
-.video{
-   background-image: url('https://iamrk-js.github.io/bootstrap4/assets/images/media.jpg');
+.video {
+    background-image: url('https://iamrk-js.github.io/bootstrap4/assets/images/media.jpg');
+}
+
+/* ########### services page css ######### */
+.faq .card {
+    background-color: transparent;
+    margin-bottom: 10px;
+}
+
+/* .faq .card button.btn-link {
+    color: #fff;
+    text-decoration: none;
+    width: 100%;
+    text-align: left;
+} */
+
+
+
+
+.footer {
+    background-color: #000;
+    font-size: 18px;
 }
 
 
-.footer{
-   background-color: #000;
-   font-size: 18px;
+/* // responsive css  */
+
+@media all and (max-width:768px) {
+    .brandSlider .carousel-caption h2{
+        font-size: 2.4rem
+    }
 }
